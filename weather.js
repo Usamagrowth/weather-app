@@ -24,3 +24,18 @@ async function getWeather() {
     resultBox.innerHTML = `<p style="color: red;"><i class="fas fa-exclamation-circle"></i> ${error.message}</p>`;
   }
 }
+  
+const clock = () => {
+  const now = new Date();
+  let hours = now.getHours().toString().padStart(2, "0");
+  let minute = now.getMinutes().toString().padStart(2, "0");
+  let seconds = now.getSeconds().toString().padStart(2, "0");
+  document.querySelector(
+    "#clock"
+  ).textContent = `${hours} : ${minute} : ${seconds}`;
+};
+
+clock();
+
+setInterval(clock, 1000);
+

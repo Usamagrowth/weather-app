@@ -52,7 +52,7 @@ input:focus {
 button {
   padding: 12px 20px;
   font-size: 16px;
-  background-color: #2196f3;
+  background-color: rgb(173, 236, 79);
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -63,6 +63,7 @@ button {
 
 button:hover {
   background-color: #0b7dda;
+  transform: translateY(5px);
 }
 
 #weatherResult {
